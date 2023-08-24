@@ -1,0 +1,285 @@
+/* Shaired Style */
+
+/* Work sens font from google */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+
+.primary-color{
+   color: #FF42A5;
+}
+
+
+
+body{
+    max-width: 1420px;
+    font-family:  Work Sans;
+    margin: 0 auto;
+
+}
+
+
+/* Header Style */
+
+.header-container {
+    background-color: #FFF;
+   
+}
+
+.nav-title{
+    display: flex;
+    align-items: center;
+}
+
+.nav-title h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.nav-title img{
+
+    flex-shrink: 0; 
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:  240px;
+    padding-left: 240px;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul{
+    display: flex;
+    margin: 0;
+}
+
+
+.nav-menu ul a{
+    color: #3C354F;
+    text-decoration: none;
+}
+
+.nav-menu li{
+    list-style-type:none;
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.menu-btn{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px 24px;
+
+}
+
+.fa-brands{
+    font-size: 20px;
+    color: red;
+    margin-left: 5px;
+
+}
+
+.menu-btn img{
+    height: 20px;
+    margin-left: 5px;
+}
+
+
+
+/* Banner Style Start Hear */
+
+.banner-container{
+    background-image: url("/images/Group\ 14.png");
+    background-size:cover;
+    display: flex;
+}
+/* Banner image style */
+.banner-image{
+    width: 50%;
+    padding-right:  240px;
+}
+
+.banner-image img{
+    width: 100%;
+}
+
+/* Banner content style */
+.banner-content{
+    width: 50%;
+    padding-left: 240px;
+    padding-right: 60px;
+    background-image: url(/images/Group\ 14.png);
+    background-size: cover;
+
+
+
+}
+
+.banner-content-container{
+  
+    margin:10px 0;
+
+}
+
+.banner-content-container h3{
+    color: #0B0223;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+.banner-content-container h1{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 6rem;
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip:text;
+    color: transparent;
+    margin: 0;
+}
+
+.banner-content-container ul{
+    padding: 0;
+}
+
+.banner-content-container ul li img{
+    height: 1.2rem;
+}
+
+.banner-content-container ul li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.banner-content-container ul li span{
+    padding-left: 4px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #534C64;
+    
+}
+
+.singin-btn{
+    border-radius: 40px;
+    background-color: #FF42A5;
+    padding: 21px 40px;
+    margin-right: 12PX;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 0px;
+}
+
+.go-btn{
+    border-radius: 40px;
+    background-color: #4EC5F7;
+    padding: 21px 40px;
+    margin-left: 12PX;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 0px;
+}
+
+
+
+
+
+/* Media Query */
+
+/* Small Device */
+
+@media screen and (max-width: 576px) {
+
+    nav,
+    ul,
+    .nav-menu,
+    .nav-menu li,
+    .banner-container{
+       flex-direction: column;
+       align-items: center;
+       padding: 10px 40px;
+}
+
+
+.banner-content,
+.banner-content-container{
+    width: 100%;
+    padding-right: 0;
+    padding: 10px 40px;
+}
+
+.banner-image{
+    width: 90%;
+    padding-right: 0;
+    padding: 10px 40px;
+}
+
+}
+
+/* Medium Device */
+
+@media screen and (max-width: 768px) {
+
+    nav,
+    .banner-container{
+       flex-direction: column;
+       align-items: center;
+       padding: 10px 40px;
+}
+
+
+.banner-content,
+.banner-content-container{
+    width: 100%;
+    padding-right: 0;
+    padding: 10px 40px;
+}
+
+.banner-image{
+    width: 90%;
+    padding-right: 0;
+    padding: 10px 40px;
+}
+
+}
+
+
+/* Large Device */
+@media screen and (min-width: 768px) and (max-width: 1200px){
+
+    .banner-container{
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        padding: 10px 40px;
+    }
+
+    .banner-image,
+    .banner-content{
+        width: 80%;
+        padding-right: 0;
+        padding: 0 auto;
+    
+        
+    }
+
+    .banner-content-container{
+        padding: 10px 200px;
+    }
+
+
+}
