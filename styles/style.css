@@ -195,6 +195,56 @@ nav{
 }
 
 
+/* Online Game section */
+
+
+
+.online-game-container h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.online-game-container{
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.online-game-container p {
+    text-align: center;
+    color:  #534C64;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.linear-gradient{
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+
+
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-container .card{
+    width: 342px;
+    height: 500px;
+}
+
+.card-container .card p{
+    text-align: left;
+}
+
+.card-container .card img{
+    width: 100%;
+}
+
+/* Play Instantly Section */
 
 
 
@@ -208,14 +258,22 @@ nav{
     ul,
     .nav-menu,
     .nav-menu li,
-    .banner-container{
+    .banner-container,
+    .card-container{
        flex-direction: column;
        align-items: center;
        padding: 10px 40px;
 }
 
+.card img{
+    width: 100%;
+}
+
+
+
 
 .banner-content,
+.online-game-container,
 .banner-content-container{
     width: 100%;
     padding-right: 0;
