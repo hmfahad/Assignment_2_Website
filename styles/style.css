@@ -181,7 +181,27 @@ nav {
     width: 100%;
 }
 /* Play Instantly Section */
+.play-instantly-container{
+    display: flex;
+    max-width: 1250px;
+    margin: 10px auto;
+}
 
+.play-text h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.play-text h3 span{
+    color: #F948B2;
+}
+.big-image{
+    width: 600px;
+    height: 630px;
+}
+.small-image{
+    width: 300px;
+    height: 320px;
+}
 /* Media Query */
 /* Small Device */
 @media screen and (max-width: 576px) {
