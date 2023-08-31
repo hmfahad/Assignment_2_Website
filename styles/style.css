@@ -174,6 +174,7 @@ nav {
     width: 300px;
     height: 420px;
     margin: auto;
+    position: relative;
 }
 .card-container .card p {
     text-align: left;
@@ -181,6 +182,25 @@ nav {
 .card-container .card img {
     width: 100%;
 }
+.card .hover-image{
+    width: 300px;
+    height: 420px;
+    position: absolute;
+    top: 140px;
+    left: 110px;
+
+}
+.card .hover-image img{
+    width:  80px;
+    height: 80px;
+
+}
+
+.card .hover-image:hover{
+    visibility: visible;
+}
+
+
 /* Play Instantly Section */
 .play-instantly-container{
     display: flex;
@@ -194,6 +214,73 @@ nav {
 .play-text{
     width: 50%;
 }
+<<<<<<< HEAD
+=======
+
+.play-text h3{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: right;
+    margin: auto;
+    width: 80%;
+}
+.play-text h3 span{
+    color: #F948B2;
+}
+.play-text p{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+}
+.play-image{
+    width: 50%;
+}
+.big-image{
+    width: 100%;
+}
+.small-image{
+    width: 20%;
+    height: 20%px;
+    position: absolute;
+    bottom: -60px;
+    right: 35%;
+}
+/* All game style */
+.all-game-container{
+    display: flex;
+    max-width: 1250px;
+    margin: 60px auto 10px auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn{
+    margin-right: 30px;
+}
+
+.btn button{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    padding: 1px 15px;
+    background-color: #FFF;
+    margin-top: 5px;
+    margin-right: 200px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn button img{
+    width: 50px;
+    height: 50px;
+    margin-right: 2px;
+}
+.btn button:hover{
+    border: 2px solid pink;
+}
+>>>>>>> 79322c7da6ca0609bf82aad9f5c7f85d3f95fb99
 
 .play-text h3{
     font-size: 3rem;
@@ -302,7 +389,7 @@ nav {
 .icon{
     margin: 10px;
 }
-.fa-brands{
+.icon .fa-brands{
     color: #FFF;
 }
 .copywrite{
@@ -316,6 +403,7 @@ nav {
     .nav-menu,
     .nav-menu li,
     .play-instantly-container{
+<<<<<<< HEAD
         flex-direction: column;
         align-items: center;
         margin: 5px auto;
@@ -411,6 +499,106 @@ nav {
     }
     .banner-image {
         width: 90%; 
+=======
+        flex-direction: column;
+        align-items: center;
+        margin: 5px auto;
+    } 
+    .play-image{
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+    .play-text h3{
+        text-align: center;
+    }
+    .play-text p{
+        text-align: center;
+    }
+
+    .big-image{
+        width: 100%;
+        height: 98%;
+    }
+
+    .small-image{
+        width: 30%;
+        height: 30%;
+        right: 40%;
+
+    }
+    
+    
+
+    
+    .banner-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 5px auto;
+    }
+    .banner-text{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-title h3{
+        margin: 10px auto;
+    }
+    .nav-menu ul{
+        padding: 5px;
+    }
+    .nav-menu ul li{
+        padding: 10px;
+    }
+    .banner-content,
+    .online-game-container,
+    .banner-content-container {
+        width: 100%;
+    }
+    .banner-image {
+        width: 90%;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card img {
+        width: 100%;
+    }
+}
+
+.btn button{
+    margin-right:1px;
+    padding: 3px 2px;
+}
+/* Medium Device */
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    nav,
+    .banner-container,
+    .play-instantly-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-content,
+    .banner-content-container {
+        width: 100%;
+    }
+    .banner-image {
+        width: 90%; 
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .play-image{
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    .play-text h3{
+        text-align: center;
+    }
+    .play-text p{
+        text-align: center;
+>>>>>>> 79322c7da6ca0609bf82aad9f5c7f85d3f95fb99
     }
     .card-container{
         grid-template-columns: repeat(2, 1fr);
@@ -437,7 +625,24 @@ nav {
         height: 40%;
         right: 40%;
 
+<<<<<<< HEAD
     }
+=======
+    .big-image{
+        width: 100%;
+        height: 98%;
+    }
+
+    .small-image{
+        width: 40%;
+        height: 40%;
+        right: 40%;
+
+    }
+    
+    
+
+>>>>>>> 79322c7da6ca0609bf82aad9f5c7f85d3f95fb99
 }
 /* Large Device */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
