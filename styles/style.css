@@ -2,71 +2,50 @@
 
 /* Work sens font from google */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-
-
-.primary-color{
-   color: #FF42A5;
+.primary-color {
+    color: #FF42A5;
 }
-
-
-
-body{
-    max-width: 1420px;
-    font-family:  Work Sans;
+body {
+    font-family: Work Sans;
     margin: 0 auto;
-
 }
-
-
 /* Header Style */
-
 .header-container {
     background-color: #FFF;
-   
+    margin: auto;
 }
-
-.nav-title{
+.nav-title {
     display: flex;
     align-items: center;
 }
-
-.nav-title h3{
+.nav-title h3 {
     font-size: 2.8rem;
     font-weight: 700;
 }
-
-.nav-title img{
-
-    flex-shrink: 0; 
+.nav-title img {
+    flex-shrink: 0;
 }
-
-
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right:  240px;
-    padding-left: 240px;
+    max-width: 1250px;
+    margin: auto;
 }
-
-.nav-menu{
+.nav-menu {
     display: flex;
     align-items: center;
 }
-
-.nav-menu ul{
+.nav-menu ul {
     display: flex;
     margin: 0;
 }
-
-
-.nav-menu ul a{
+.nav-menu ul a {
     color: #3C354F;
     text-decoration: none;
 }
-
-.nav-menu li{
-    list-style-type:none;
+.nav-menu li {
+    list-style-type: none;
     color: #3C354F;
     font-size: 1rem;
     font-weight: 500;
@@ -74,103 +53,75 @@ nav{
     align-items: center;
     display: flex;
 }
-
-.menu-btn{
+.menu-btn {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 10px 24px;
-
 }
-
-.fa-brands{
+.fa-brands {
     font-size: 20px;
     color: red;
     margin-left: 5px;
-
 }
-
-.menu-btn img{
+.menu-btn img {
     height: 20px;
     margin-left: 5px;
 }
-
-
-
 /* Banner Style Start Hear */
-
-.banner-container{
+.banner-container {
     background-image: url("/images/Group\ 14.png");
     background-size:cover;
+}
+.banner-content{
+    max-width: 1250px;
+    margin: auto;
     display: flex;
+    align-items: center;
 }
 /* Banner image style */
-.banner-image{
+.banner-image {
     width: 50%;
-    padding-right:  240px;
 }
-
-.banner-image img{
+.banner-image img {
     width: 100%;
 }
-
 /* Banner content style */
-.banner-content{
+.banner-text {
     width: 50%;
-    padding-left: 240px;
-    padding-right: 60px;
-    background-image: url(/images/Group\ 14.png);
-    background-size: cover;
-
-
-
 }
-
-.banner-content-container{
-  
-    margin:10px 0;
-
-}
-
-.banner-content-container h3{
+.banner-text h3 {
     color: #0B0223;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 3rem;
     margin: 0;
-
 }
-
-.banner-content-container h1{
+.banner-text h1 {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 6rem;
     background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
     color: transparent;
     margin: 0;
 }
-
-.banner-content-container ul{
+.banner-text ul {
     padding: 0;
 }
-
-.banner-content-container ul li img{
+.banner-text ul li img {
     height: 1.2rem;
 }
-
-.banner-content-container ul li{
+.banner-text ul li {
     list-style-type: none;
     margin-top: 5px;
 }
-.banner-content-container ul li span{
+.banner-text ul li span {
     padding-left: 4px;
     font-size: 1.2rem;
     font-weight: 500;
     color: #534C64;
-    
 }
-
-.singin-btn{
+.singin-btn {
     border-radius: 40px;
     background-color: #FF42A5;
     padding: 21px 40px;
@@ -181,8 +132,7 @@ nav{
     font-size: 1.2rem;
     border: 0px;
 }
-
-.go-btn{
+.go-btn {
     border-radius: 40px;
     background-color: #4EC5F7;
     padding: 21px 40px;
@@ -193,151 +143,248 @@ nav{
     font-size: 1.2rem;
     border: 0px;
 }
-
-
 /* Online Game section */
-
-
-
 .online-game-container h3 {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
 }
-
-.online-game-container{
-    padding-left: 240px;
-    padding-right: 240px;
+.online-game-container {
+    max-width: 1250px;
+    margin: auto;
 }
-
 .online-game-container p {
     text-align: center;
-    color:  #534C64;
+    color: #534C64;
     font-size: 1.2rem;
     font-weight: 400;
+    margin: 2px 0;
 }
-
-.linear-gradient{
+.linear-gradient {
     background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     color: transparent;
     -webkit-background-clip: text;
-
-
 }
-
-.card-container{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
 }
-
-.card-container .card{
-    width: 342px;
-    height: 500px;
+.card-container .card {
+    width: 300px;
+    height: 420px;
+    margin: auto;
 }
-
-.card-container .card p{
+.card-container .card p {
     text-align: left;
 }
-
-.card-container .card img{
+.card-container .card img {
     width: 100%;
 }
-
 /* Play Instantly Section */
+.play-instantly-container{
+    display: flex;
+    max-width: 1250px;
+    margin: 30px auto;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
 
+.play-text{
+    width: 50%;
+}
+
+.play-text h3{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: right;
+    margin: auto;
+    width: 80%;
+}
+.play-text h3 span{
+    color: #F948B2;
+}
+.play-text p{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+}
+.play-image{
+    width: 50%;
+}
+.big-image{
+    width: 100%;
+}
+.small-image{
+    width: 20%;
+    height: 20%px;
+    position: absolute;
+    bottom: -60px;
+    right: 35%;
+}
+/* All game style */
+.all-game-container{
+    display: flex;
+    max-width: 1250px;
+    margin: 60px auto 10px auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 2px;
+}
+
+.btn{
+    margin-right: 30px;
+}
+
+.btn button{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    padding: 1px 15px;
+    background-color: #FFF;
+    margin: 5px 50px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn button img{
+    width: 50px;
+    height: 50px;
+    margin-right: 2px;
+}
+.btn button:hover{
+    border: 2px solid pink;
+}
 
 
 /* Media Query */
-
 /* Small Device */
-
 @media screen and (max-width: 576px) {
-
     nav,
     ul,
     .nav-menu,
     .nav-menu li,
-    .banner-container,
-    .card-container{
-       flex-direction: column;
-       align-items: center;
-       padding: 10px 40px;
-}
-
-.card img{
-    width: 100%;
-}
-
-
-
-
-.banner-content,
-.online-game-container,
-.banner-content-container{
-    width: 100%;
-    padding-right: 0;
-    padding: 10px 40px;
-}
-
-.banner-image{
-    width: 90%;
-    padding-right: 0;
-    padding: 10px 40px;
-}
-
-}
-
-/* Medium Device */
-
-@media screen and (max-width: 768px) {
-
-    nav,
-    .banner-container{
-       flex-direction: column;
-       align-items: center;
-       padding: 10px 40px;
-}
-
-
-.banner-content,
-.banner-content-container{
-    width: 100%;
-    padding-right: 0;
-    padding: 10px 40px;
-}
-
-.banner-image{
-    width: 90%;
-    padding-right: 0;
-    padding: 10px 40px;
-}
-
-}
-
-
-/* Large Device */
-@media screen and (min-width: 768px) and (max-width: 1200px){
-
-    .banner-container{
+    .play-instantly-container{
         flex-direction: column;
         align-items: center;
-        padding-right: 0;
-        padding: 10px 40px;
+        margin: 5px auto;
+    } 
+    .play-text{
+        width: 100%;
     }
+    .play-image{
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+    .play-text h3{
+        text-align: center;
+    }
+    .play-text p{
+        text-align: center;
+    }
+    .big-image{
+        width: 100%;
+        height: 98%;
+    }
+    .small-image{
+        width: 30%;
+        height: 30%;
+        right: 40%;
 
-    .banner-image,
+    }
     .banner-content{
-        width: 80%;
-        padding-right: 0;
-        padding: 0 auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 5px auto;
+    }
+    .banner-text{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-title h3{
+        margin: 10px auto;
+    }
+    .nav-menu ul{
+        padding: 5px;
+    }
+    .nav-menu ul li{
+        padding: 10px;
+    }
+    .banner-content,
+    .online-game-container,
+    .banner-content-container {
+        width: 100%;
+    }
+    .banner-image {
+        width: 90%;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card img {
+        width: 100%;
+    }
+}
+
+.btn button{
+    margin-right:1px;
+    padding: 3px 2px;
+}
+/* Medium Device */
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    nav,
+    .banner-container,
+    .play-instantly-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-content,
+    .banner-content-container {
+        width: 100%;
+    }
+    .banner-image {
+        width: 90%; 
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .play-text{
+        width: 100%;
+    }
+    .play-image{
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    .play-text h3{
+        text-align: center;
+    }
+    .play-text p{
+        text-align: center;
+    }
+    .big-image{
+        width: 100%;
+        height: 98%;
+    }
+
+    .small-image{
+        width: 40%;
+        height: 40%;
+        right: 40%;
+
+    }
     
-        
+    
+
+}
+/* Large Device */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .banner-content-container{
-        padding: 10px 200px;
-    }
-
-
 }
