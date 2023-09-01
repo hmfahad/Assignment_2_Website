@@ -11,10 +11,8 @@
 
 
 body{
-    max-width: 1420px;
     font-family:  Work Sans;
     margin: 0 auto;
-
 }
 
 
@@ -22,7 +20,6 @@ body{
 
 .header-container {
     background-color: #FFF;
-   
 }
 
 .nav-title{
